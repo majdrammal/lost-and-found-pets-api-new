@@ -68,6 +68,10 @@ def found_serializer(found):
         'image': found.image
     }
 
+@app.route('/', methods = ['GET'])
+def home():
+    return "Nothing on this page"
+
 # missing
 
 @app.route('/missing', methods = ['GET'])
