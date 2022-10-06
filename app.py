@@ -4,7 +4,6 @@ from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
 CORS(app)
-# app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://root:Best19462005!@localhost/lost_and_found_pets" 
 app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://rjhglancelwqph:324e568e3fdf61161274b78b02d572ce2e288dd869421a8c4213d08b3610e178@ec2-18-209-78-11.compute-1.amazonaws.com:5432/d5nuo2uksvc5vq" 
 db = SQLAlchemy(app) 
 
